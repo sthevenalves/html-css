@@ -1,0 +1,20 @@
+-> repositorio local/remoto
+
+O ideal é sempre guardar versoes anteriores de sites.
+Usa-se um gerenciador de versoes(git) para guarda-los.
+
+Git(repositorio local) é sitema que mantem versoes de 
+um software no computador
+
+Caso o hd queima, de algum problema do pc e venha a perder
+o pc, ou caso deseja mostrar os projetos para outra pessoa,
+deve-se ter um servidor e colocar os arquivos do site nele,
+ou seja, hospedalos.
+
+GitHub(repositorio remoto) faz backup do repositorio local 
+dentro do git e coloca na nuvem
+
+O github permito trabalho em equipe, editando o repositorio
+remoto, cada um deles vai ter o seu proprio repositorio
+local.
+

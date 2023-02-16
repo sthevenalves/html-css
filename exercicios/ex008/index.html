@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+</head>
+<body>
+    <h1>Trabalhando com listas</h1>
+    <h2>Listas ordenadas (OL)</h2>   
+    <p>Ordered list(OL) é uma tag para ordernar listas é usado juntamente de seu delimitar (LI)</p>
+    <ol>
+        <li>Acordar</li>
+        <li>Higiene Matinal</li>
+        <li>Aeróbico</li>
+        <li>Tomar banho</li>
+        <li>Café da Manhã</li> 
+    </ol>
+    <p>O /LI no final é opcional, ele funciona so com a entrada LI</p>
+    <ol type="I" start="1">
+        <li>Batata</li>
+        <li>Chocotone</li>
+        <li>Refrigerante</li>
+        <li>Queijo</li> 
+    </ol>
+    
+    <p>O OL possui um parametro type, onde configuramos o marcador, que são 1,A,a,I,i. <br>
+        Também pode indicar o início da contagem, usando o parametro start</p>
+    <h2>Listas não ordenadas (UL)</h2>
+    <p>Também chamadas de marcadores, são aquelas onde a ordem não influenciará no significado da lista. <br> Ela é apenas uma ótica maneira para organizar os itens
+    </p>
+    <ul type="square">
+        <li>Papel Higienico</li>
+        <li>Tenis</li>
+        <li>Calças</li>
+        <li>Frutas</li>
+    </ul>
+    <p>Assim como o OL, o UL também possui um parametro type, sendo eles: <br>
+    <strong>disc</strong> - padrão(bolinha preta, <strong>circle</strong> - uma bola com uma borda preta e sem preenchimento, <strong>square</strong> - um pequeno quadrado</p>
+    <h2>Misturando Listas</h2>
+    <ol>
+        <li>Camisa</li>
+        <li>Meias</li>
+        <ol type="a">
+            <li>Listrada</li>
+            <li>Básica</li>
+            <li>Cano baixo</li>
+        </ol>
+        <li>Moletom</li>
+        <li>Gorro</li>
+        <li>Luvas</li>
+    </ol>
+    <h2>Listas de Definições</h2>
+    <p>Como se fosse no dicionário, temos termos e definições. É uma lista sem marcadores <br>
+    Toda lista de definições esta dentro de uma tag DL(definition list), cada termo é um DT(definition term) e cada descrição é um DD(definition description)</p>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Linguagem de marcação para a criação do conteúdo de um site.</dd>
+        <dt>CSS</dt>
+        <dd>Linguagem de marcação para a criação do design de um site.</dd>
+        <dt>JavaScript</dt>
+        <dd>Linguagem de programação para a criação de interatividade de um site.</dd>
+    </dl>
+    <h2>Lista dos meus jogos favoritos</h2>
+    <ul>
+        <li>Nitendo</li>
+        <ol type="1">
+            <li>Mario Bros</li>
+            <ul type="square" >
+                <li>Super Mario bros 3</li>
+                <li>Mario: Lost Levels</li>
+            </ul>
+            <li>Ninja Gaiden</li>
+            <ul type="square">
+                <li>Ninja Gaiden III</li>
+            </ul>
+        </ol>
+            <li>Super Nitendo</li>
+            <ol type="1">
+                <li>Super Mario World</li>
+                <li>Donkey Kong</li>
+                <ul type="square">
+                <li>Donkey Kong Counrty III</li>
+                <li>Diddy's Kong Quent</li> </ul>
+            </ol>
+            <li>Playstation</li>
+        <ol>
+            <li>Final Fantasy</li>
+            <ul type="square">
+                <li>Final Fantasy VII</li>
+                <li>Final Fantasy IX</li> </ul>
+            <li>Castlevania</li>
+            <ul type="square">
+                <li>Simphony of the Night</li> </ul>
+        </ol>
+im
+    </ul>
+</body>
+</html>

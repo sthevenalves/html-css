@@ -1,0 +1,459 @@
+ Linguagem html é focoado em conteudo, sendo texto,
+video, tabela, listas, etc.
+ Atrativos visuais são css, focado em design,
+sendo tamanhos, cores, sombras, etc.
+ Javascript trabalha com interações, sendo menus
+interativos, validações, etc.
+ 
+Conteudo em HTML
+
+<h1> exemplo de titulo </h1>
+<p> exemplo de paragrafo </p>
+<img src = "foto.png" alt = "exemplo de foto">
+
+<h1> abertura de tag e </h1> seu fechamento
+"exemplo de titulo" :é o conteudo
+<img src = : abertura de parametro
+alt = : é um parametro
+"foto.png" e "exemplo de foto": é o seu valor
+
+Todas as tags tem seu parametros e valores
+
+Estilo em CSS
+
+h1{
+font-family: Arial;
+font-size: 20pt;
+color: blue;
+}
+
+h1{ }: são seletores
+font=family e font-size são declarações
+color: é a propriedade
+blue: valor
+
+Estrutara básica de documento HTML
+<!doctype html>: iniciar o densenvolvimento em HTML
+<html lang = "pt-br">
+	<head>: cabeça(configurações)
+		<meta charset="UTF-8">: caracteres UTF-8(acentuações)	
+		<meta name="viewport"
+		content="width=device-width,initial-scale=1.0>: site vizualizado sem zoom
+		<title>document</title>
+	</head>
+	<body>: corpo(conteudo do site)
+	<h1>Olá, mundo!</h1>
+	</body>
+</html>
+
+<hr>: horozont row, cria uma linha horizontal
+<br> quebra de linha
+&lt; (less then) simbolo de menor que(<)
+&gt; (greather than) simbolo de maior que(>)
+<!----> comentario 
+&#x e codigo da emojipedia - para colocar emojis(retirar o U+)
+
+Site com imagens de dominio público
+UnSplash, Pexels, FreePik, Rawpixel, 
+Pixabay, Libreshot, Wikimedia Commons
+
+Formatos de imagens
+JPEG: compactação, gerar imagens fotográficas com o tamanho reduzido
+PNG: capacidade de configurar a opacidade de cada pixel(deixar o fundo transparente) e
+qualidade um pouco melhor
+
+Tamanho de imagem para usar em site
+largura(max) 1500, 650 é o mais usual em sites
+No CSS pode mudar o tamanho da imagem, mas não o tamanho do arquivo,
+arquivos grandes deixa o site pesado, lento
+
+Usar o GIMP para redimencioanar as imagens, diminuindo o tamanho para
+deixar mais usável em sites, evitando de deixar o site lento.
+
+<img scr="ctrl+space" alt="nome da imagem">
+obs: a imagem deve ta na mesma pasta ou em uma
+sub-pasta para add a imagem
+Para add imagens direto da internet, deve copiar o endereço
+de imagem e colar no: <img scr="URL"alt="nome da imagem">
+
+No Gimp, deve otimizar a imagem para add no site, sendo
+cortando partes da imagens que não seram utilizadas e
+as redimensionando para um tamanho adequado.
+Vale a pena sempre guardar a imagem full para caso queira fazer
+mais testes nela.
+
+Para adicionar um favicon no site, o icone q fica na aba:
+link: favicon
+As imagens que seram inseridas no aba do site, o recomendado é q
+seja em .ico
+Um site é o favicon
+
+Existe níveis de texto, sendo h1 o primeiro, vai diminuindo conforme segue
+h2,h3...
+Lorem é um gerador de texto aleatório para uso de exemplo
+ex
+h1 titulo
+   h2 subtitulo de h1
+	h3 subtitulo de h2
+h1 titulo
+   h2 subtitulo h1
+   h2 subtitulo h1
+	h3 subtitulo de h2
+cada h é um nível, endentificar cada nível do texto para assim publicalo
+no seu site
+h1: titulo de primeiro nivel
+<address> endereço </address>: tag para add endereco
+
+obs: html trabalha apenas com semantica, com o significado.
+ctrl shift p - abb - envelopar abreviatura - termo q deseja abreviar(p,h,i...)
+
+O recomendado é usar strong para negrito e EM para itálico
+
+Para mudar a cor da marcação de texto, usa-se dentro das tags, isso já é css e não html5
+<mark style="background-color: cor;"> </mark> dessa forma, a cor da marcação fica somente no texto selecionado
+
+Para usar a mesma cor de marcação para toda vez que usar mark, é coloca-lo na parte head
+<head> 
+ 	<style>
+	mark{
+            background-color: cor;
+        }
+	</style>
+</head>
+
+Na citação completa, usa-se o blockquote, para add o link da referencia online, 
+coloca na entrada da tag
+<blockquote cite="link"> </blockquote>
+No blockquote a citação tem uma quebra de linha e um deslocamento horizontal para direita
+
+A tag bdo escolhe a ordem das letras, sendo l(left) ou r(right)
+
+
+----------------------------CSS---------------------------
+
+ Para fazer os estilos de cada pagina, é criado uma página style.css
+para usar o estilo da pagina, na parte head da pagina, usa-se link:css
+pode-se chamar mais de um por página
+ Na pagina do style.css não é preciso usar style, pode-se ir direto
+ No mesmo arquivo eu posso usar css externo, interno e inline
+
+ @charset "UTF-8"; é uma regra para permitir acentuações no css
+ background preta pode causar cansaço na leitura, por isso evitar colocar muito texto
+em fundos pretos
+
+*Circulo cromatico(12 cores)
+coisas simetricas deixa as coisas bonitas
+cores:
+primarias: amarelo,vermeho,azul
+secundarias: laranja,violeta,verde
+(primara+secundaria) = tercearias: amarelo-esverdeado, amarelo-alaranjado,
+vermelho-alaranjado,vermelho-arroxrado,azul-arroxeado,azul-esverdeado.
+
+
+sempre a cor primaria e depois a secundaria
+
+numa paleta de cores em site é entre 3 a 5 cores, em media 4
+sempre identificar a cor primaria para um site
+
+temperatura de cores
+cores frias: amarelo-esverdeado ate vermelho-arroxeado
+cores quentes: amarelo ate violeta
+
+1.cores complementares(contrastis entre si)
+violeta - amarelo
+vermelho - verde
+É a cor do lado oposto na palheta 
+1 - 6
+
+2.Cores Analogas(cores irmãs)
+são cores que estão ao lado da cor escolhida(cores vizinhas)
+1 - 2 - 3
+
+3.Cores analogas e complementares
+uma cor principal, suas duas vizinhas e em contraste
+a cor principal escolhida
+1 - 2 - 3
+    6
+
+4.Cores Analogas relacionadas(degrade de tres cores)
+pegar duas cores vizinhas, pular uma cor ao lado e esolher a outra
+como terceira.
+1 - 2 - 4
+
+5.cores intercaladas
+escolher uma cor principal, pular uma cor, e pegar a proxima,
+pular a proxima novamente e pegar a cor
+1 - 3 - 5
+-cores triádicas
+pular tres cores e pegar a proxima, pular mais tres cores e pega-la
+1-4-5 (forma um triangulo equilatro
+-cores em quadrado
+pular duas cores e pegar uma cor, fazer isso 4x
+1 - 4 - 7 - 10
+-cores tetradicas
+Escolher uma cor, pegar sua complementar, depois escolher outra cor
+e pegar sua complentar(4 cores, forma um retangulo)
+cor monocromia
+escolher uma cor, e modificar a saturação e a luminosidade,
+forma um degrade
+
+adobecolor - criar paleta de cores
+paletton.com - ver exemplos de paletas em sites
+coolors - selecionar corer harmonicas
+
+background-image: linear-gradient: (angulo, cores) -> gradiante linear
+angulos: to left, to top, to right,to bottom, 1 a 100deg
+cores: pode-se usar quantos cores quiser, mas o recomendado é 2 cores para gradiante
+	
+background-image: radial-gradient: (angulo, cores) -> gradiante radial
+angulos: circle, 1 a 100deg
+
+*Ao lado das cores, dentro da virgula da cor, pode-se aplicar porcentagens,
+como 3% e 10% para demilitar o espaço que a cor preenchi no degrade.
+
+background-attachment: fixed; para que não ocorra alteração de cores no rolamento
+do mouse
+
+asterisco com chaves é uma configuração global do CSS
+*{
+   hight: 100% 
+ } 
+
+width -> largura
+ex: 100px
+
+margin: auto -> centralizar o width(texto)
+
+border-radius -> arrendodamento das bordas
+
+box-shadow -> sombreamento do width: 5px 5px 15px black
+direita, baixo, tonalidade do sombreamento, cor
+
+text-shadow: 1px 1px 1px black
+direita, baixo, tonalidade do sombreamento, cor
+
+tipografia básica
+
+Jhonatan Gutenberg -> pai da imprensa
+
+A letra x é o princio de todo texto em sites, pois todas as letras
+minusculas tem uma altura x minusculo
+a letras minusculas q vazam da altura x, com b e k, para cima
+é chamado de ascendente e para baixo descendente
+Altura de todas as letras é corpo
+serifa -> pezinho das letras, nem todas as fontes tem serifa
+*aula 14
+haste, filete, esporão, vertice, terminal, arco
+pé, barriga, orelha, braço, perna, espinha, orelha
+glifo é uma letra
+confunto de glifos é uma fonte
+familia tipofrafica = grossura da mesma letra
+
+na leitura, é necessario cores complementares
+
+categoria de fontes
+serifadas
+sans-serif -> sem serifa (recomendado para ler em telas)
+monoespaçada -> as letras tem a mesma largura
+handwriting -> simula caligrafia a mão
+display -> fontes comemorativas
+no font-family, ocorre 3 fontes ao escolher uma fonte,
+isso acontece é que se caso o navegador não reconhecer
+a primeira fonte, ele ira para segunda
+ex: font-family: arial, helvetica, sans-serif;
+sans-serif, serif, monospace são fontes genericas
+que qualquer dispositivo ler, é colocado uma fonte
+padrao da escolha do dispositivo
+
+css font combinations -> site para achar combinações de
+fontes
+
+pode usar um seletar para mais tags, tipo
+h1, h2{
+}
+
+medidas absolutas
+in -> polegada
+px -> pixel
+pt -> ponto
+pc -> paica
+
+Medidas Relativas
+em -> medida relativa ao tamanho da fonte, relativo ao M maisuculo
+de uma fonte
+ex -> altura x de uma fonte, relativo ao x minusculo
+de uma fonte
+rem -> relativo a fonte que ta configurado no body
+vw -> view wildef, tamanho da tela
+vh -> altura da tela
+
+para font-size recomenda-se px e em
+16px é padrão de font-size
+16px geralmente = 1em
+em é melhor que px
+
+wight -> peso
+width -> largura
+height -> altura
+
+font-wight -> peso da fonte(letra mais fina ou grossa)
+tipos de peso:
+-> lighter - normal - bold - bolder
+-> 100 ate 900(400 é o normal)
+
+font-style: italic -> letra italica ou normal
+text-decoration: anderline -> texto sublinhado
+
+font-family
+font-weight
+font-size
+font-style
+
+(shorthand) -> dizer varias coisas em uma linhas
+
+Usar entre 3 a 4 fontes em um site
+grandes titulos
+destaque
+normal
+
+*shorthand font:
+-font-style > font-wight > font-size > font-family
+ordem para fazer uma junção das quatro...
+
+font: italic bolder 3em 'word sans', sans-serif;
+
+font: bold 2em 'work sans';
+
+usa-se o google fonts para importar fontes,
+o @import url não fica entre seletores e fica na parte
+de cima do style, pois ele é uma regra
+1.Google fonts
+2.escolhe a fonte
+3.select regular(estilos que a fonte tem, pode ser mais de um)
+4.@import url
+5.CSS rules to specify families
+
+tipos de formats
+opentype(otf)
+truetype)ttf)
+embedded-opentype
+truetype-att
+svg
+
+geralmente o otf e ttf são os compatíveis com todos os navegadores
+
+como colocar fonte externa:
+1. dafont
+2. escolher fonte desejada(verificar se tem acentuações)
+3. baixar ela e coloca-la na pasta do site, recomenda-se que as
+fontes tenham sua propria pasta
+4. @font-face{
+font-family: 'nome';
+src: url(ctrl + space) format('formats');
+5. pode-se usar font-wight e font-style
+
+Descobrir fontes de imagens: what font is
+
+text-indent: 30px; espaçamento dos inicios de paragrafos
+
+<spam> </spam> é para separar partes do texto
+
+ID sobrepõem o CLASS
+
+<div> são divisões que chegam até o final de uma linha
+
+border: tamanho solid cor -> borda de um bloco
+display: inline-block -> colocar blocos lado a lado
+
+subclasses é caracterizado por :(dois pontos)
+div:hover{} função de passar o mouse para ter alguma ação
+
+display: none -> deixar escondido
+
+display: block -> deixar concreto
+
+div > p -> um paragrado dentro de uma div
+
+div:hover > p
+
+pseudo elemento -> ::(dois pontos seguidos)
+
+border -> linha q circunda o conteúdo
+________________________________________________________________
+
+margin | borda | padding | conteúdo | padding | borda  | margin
+----------------------------------------------------------------
+
+padding -> espaço que fica entre o conteúdo e a borda
+margin -> espaço que fica fora da borda
+outline -> contorno da borda, fica no espaço da margin
+
+tipos de caixa 
+box-level -> (quebra a linha)
+sempre ocupa a largura total da tela,
+a caixa ocupa uma espaço sem texto ocupando toda a largura
+ex: <div>,<h1>-<h6>,<main>,<p>,<main>,<header>,<nav>
+<article>,<aside>,<footer>,<form>,<video>
+
+inline-level -> (não quebra a linha)
+caixa entre as linhas sem que o texto
+quebre a linha
+ex: <spam>,<a>,<code><small>,<strong>,<em>,<sup>-<sub>,
+<label>,<button>,<imput>,<select>
+
+used agent -> é sempre o navegador
+
+por padrao o h1 = 2em
+
+por padrao a margin = 21,44 altura e largura
+
+opções para border-style:
+solid
+dashed - potilhado quadrado
+dotter pontilhado bolinhas
+double - linha dupla
+groove - margin 3d
+
+padding-top: tamanho;
+padding-right: tamanho;
+padding-bottom: tamanho;
+padding-left: tamanho;
+
+margin: auto; -> centralizar uma caixa
+
+*Sorthand
+border: largura estilo cor
+
+pedding: top right bottom left
+Caso todos os lados do padding for de mesmo valor, bastar usar:
+padding: valor(px)
+Caso coloque dois valores: padding v1px v2px
+v1 sera o top e bottom 
+v2 sera right e left
+
+Margin: top right bottom left
+Margin top auto bottom auto -> auto automatiza para centralizar
+
+outline: tamanho style cor;
+
+Para modificar a caixa, bastar colocar display: inline ou block
+dentro dos seletores
+
+header main footer -> são divs (grouping tags)
+
+box-shadow: insert (para sombras internas)
+
+border-radius:top left top right bottom right bottom left;
+sorthand: um valor conta para todos
+border-radius: 5px;
+sorthand: dois valores indicam top left e seu oposto
+bottom right e seu oposto
+border-radius: 5px 10px;
+
+Para adicionar uma borda personalizada, basta fazer:
+1.border-image-source: url('nome');
+2.border-image-slice: tamanho(ex.27);
+3.border-image-repeat: repeat;
+
+sorthand
+border-image: 1 2 3;

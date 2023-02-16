@@ -1,0 +1,57 @@
+-> categoria de fontes
+serifadas
+
+sans-serif: sem serifa (recomendado para ler em telas)
+
+monoespace: as letras tem a mesma largura
+
+handwriting: simula caligrafia a mão
+
+display: fontes comemorativas
+
+-> usa-se o google fonts para importar fontes,
+o @import url não fica entre seletores e fica na parte
+de cima do style, pois ele é uma regra
+1. Google fonts
+2. escolhe a fonte
+3. Na parte de baixo tem como add o tamanho e o estilo
+que a fonte dispõe
+4. select regular(estilos que a fonte tem, pode ser mais de um)
+5. @import url, coloco dentro do style.
+6. CSS rules to specify families
+7. No body coloca o que foi copiado na parte 6
+
+-> como colocar fonte externa:
+1. dafont
+2. escolher fonte desejada(verificar se tem acentuações)
+3. baixar ela e coloca-la na pasta do site, recomenda-se que as
+fontes tenham sua propria pasta
+4. @font-face{
+font-family: 'nome';
+src: url(ctrl + space) format('formats');
+5. pode-se usar font-wight e font-style
+6. @font-face fica dentro do style
+
+-> tipos de formats
+opentype(otf)
+truetype)ttf)
+embedded-opentype
+truetype-att
+svg
+
+Geralmente o otf e ttf são os compatíveis com todos os navegadores
+
+-> categoria de fontes
+serifadas
+sans-serif -> sem serifa (recomendado para ler em telas)
+monoespaçada -> as letras tem a mesma largura
+handwriting -> simula caligrafia a mão
+display -> fontes comemorativas
+
+No font-family, ocorre 3 fontes ao escolher uma fonte,
+isso acontece é que se caso o navegador não reconhecer
+a primeira fonte, ele ira para segunda
+ex: font-family: arial, helvetica, sans-serif;
+sans-serif, serif, monospace são fontes genericas
+que qualquer dispositivo ler, é colocado uma fonte
+padrao da escolha do dispositivo

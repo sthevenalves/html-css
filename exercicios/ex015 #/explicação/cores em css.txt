@@ -1,0 +1,74 @@
+->Representação de uma cor em CSS
+
+-nomes: blue, yellow, red, etc.
+
+-hexadecimal: #0000F, #ffffff, etc
+
+Representação por códigos hexadecimais
+Decimal: 0 1 2 3 4 5 6 7 8 9
+hexadecimal: 0 1 2 3 4 5 6 7 8 9 A B C D E F
+
+-rgb: rgb(0, 0, 255), sendo rgb (red, green, blue)
+
+Cada cor primária pode ter um valor entre 0 e 255,
+totalizando 256 possibilidades para cada elemento. 
+
+-hsl: hsl(179, 100%, 34%) 
+
+179 de hue (matiz), 100% de saturation (saturação) e 
+34% de lightness (luminância).
+Representada em CSS com um outro formato baseado na 
+maneira como o olho humano enxerga as cores
+
+-> Gradiantes em CSS
+Gradiente é considerado pelo navegador como se fosse uma 
+imagem  por isso usamos a propriedade background-image na
+declaração CSS.
+
+-linear-gradient
+Exemplo: 
+
+<style>
+	body{
+	background-image: linear-gradient(90deg, yellow, red);
+	}
+</style>
+
+O primeiro parâmetro da função, indica o ângulo de 
+inclinação de 90graus (90deg) e as seguintes indicam as 
+cores do degradê a ser criado. Você pode indicar quantas 
+cores quiser
+O parametro de graus(deg) também aceita valores negativos
+(45deg, -90deg, 25deg,…) 
+
+-radial gradient
+Exemplo: 
+<style>
+  body{ background-image: radial-gradient(circle, red, yellow)
+Para melhores os gradientes, é recomendado alterar a 
+procentagem das cores deixando um pouco mais trasparente.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

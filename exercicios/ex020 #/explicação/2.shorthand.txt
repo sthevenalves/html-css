@@ -1,0 +1,150 @@
+-> Shorthand border
+
+border-width: 5px;
+border-style: solid;
+border-color: black;
+
+border: 5px solid black;
+
+------------------------------------------------------
+
+-> shorthand outline
+
+outline-width: 5px;
+outline-style: solid;
+outline-color: blueviolet;
+
+outline: 5px solid blueviolet;
+
+------------------------------------------------------
+
+Todo elemento de caixa possui quatro valores para padding 
+e quatro para margin, sempre nessa mesma ordem: 
+superior (-top), direita (-right), inferior (-bottom),
+esquerda (-left).
+
+-> Shorthand padding
+
+padding-top: 10px;
+padding-right: 15px;
+padding-bottom: 20px;
+padding-left: 25px;
+
+padding: 10px 15px 20px 25px;
+
+------------------------------------------------------
+
+-> Shorthand margin
+
+margin-top: 0px;
+margin-right: 10px;
+margin-bottom: 20px;
+margin-left: 30px;
+
+margin: 0px 10px 20px 30px;
+
+------------------------------------------------------
+
+Usando apenas duas medidas:
+
+padding-top: 10px;
+padding-right: 20px;
+padding-bottom: 10px;
+padding-left: 20px;
+
+padding: 10px 20px;
+
+margin-top: 0px;
+margin-right: 15px;
+margin-bottom: 0px;
+margin-left: 15px;
+
+margin: 0px 15px;
+
+Essa simplificação só é possível quando as medidas -top 
+e -bottom forem iguais entre si e o mesmo também ocorrer 
+entre as medidas -right e -left.
+
+------------------------------------------------------
+
+-> Margens no automático
+centralização de blocos, para que isso seja feito, devemos
+pedir que o navegador calcule automaticamente as margens da
+esquerda e da direita para que o bloco seja colocado no 
+meio do navegador, independente do tamanho da janela.
+
+margin: auto;
+
+->Display:
+define se um elemento é tratado como um bloco ou 
+elemento inline
+
+display: block (converte o inline-level para block)
+
+display: inline (converte o block-level para inline)
+
+display: inline-block (coloca tudo na mesma linha)
+
+
+Exemplo: 
+<style>
+        h1{
+            display: inline;
+            background-color: bisque;
+            height: 300px;
+            width: 300px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: black;
+         
+            padding: 10px;
+
+            margin: 20px auto 40px auto;
+
+            outline-width: 5px;
+            outline-style: dashed;
+            outline-color: blueviolet;
+
+            
+        }
+        a{
+            display:block;
+            
+            border-width: 3px;
+            border-style: solid;
+            border-color: black;
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            margin-top: 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            margin-left: 10px;
+        }
+    </style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

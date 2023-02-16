@@ -1,0 +1,34 @@
+-> Estilos Inline
+Essa forma de estilo é feito dentro da tag em html, sendo ela
+a mais ineficaz para criação de estilos
+Exemplo:
+
+<h1 style="color:darkblue;">Capitulo 1</h1>
+
+-> Estilos locais ou internos
+Declara a folha de estilo diretamente dentro da seção 
+>head> do documento HTML, utilizando o elemento style.
+Exemplo:
+
+<head>
+       <style>
+
+         h2 {color:#000;}
+
+       </style>
+</head>
+
+-> Estilos Externos
+Códigos CSS ficam em um documento externo ao documento HTML, 
+separando assim as camadas de estrutura e apresentação do 
+projeto WEB.
+Na área <head> no hmtl, é criado um comando link: css e,
+ao clicar ctrl + clique do mouse na tag, é criado um
+estilo externo.
+Exemplo: 
+
+<link rel="stylesheet" href="style.css">
+
+-As chaves{} no css são chamados de seletores
+-background-color, mudar a cor de fundo
+-color, cor da letra

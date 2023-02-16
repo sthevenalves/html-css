@@ -1,0 +1,76 @@
+ A internet surgiu durante a guerra fria.
+Internet vem da Arpanet, que tinha função de proteger centros militares
+ A ligação feita pelos continentes são por meios de cabos submarinos
+ Internet é um conjunto de muitas redes
+ Cliente é o computador que fará acesso a vídeos, sites, etc. O que
+disponibiliza a mídia, sites é o servidor(google, youtube).
+ TCP/IP: IP identifica o pontos e o TCP quebra a mensagem e vários
+pacotes e manda eles em varias rotas, caminhos diferentes até o cliente.
+Endereço IP é um endereço exclusivo que identifica um dispositivo na 
+internet ou em uma rede local.
+ Quando acessa um site e ele demora para carregar, quando colocamos
+para carregar de novo, mas foi mais rápido, isso significa que o acesso
+ao site mudou de rota.
+ HTTP é um protocolo de transferência que possibilita que as pessoas 
+que inserem a URL do seu site na Web possam ver os conteúdos e 
+dados que nele existem.
+ HTTP é um protocolo baseado em texto sem conexão. Isso significa que 
+as pessoas que acessam o site da sua empresa enviam solicitações a 
+servidores que as exibem na forma do seu site em formato de texto, 
+imagens, e outros tipos de mídia.
+ http:// especializado em hypertexto
+ www(world wide web) conjunto de servidores especializados 
+em http. Subrede de uma rede internet.
+ Computador é uma máquina capaz de analisar sinais e fazer contas
+simples de uma maneira muita rápida.
+ 8 bits é 1 byte, qtde mínima para se ter uma informação
+
+ 8 bites = 1 byte
+ 1024 byte = 1 kilobyte 
+ 1024 KB = 1 megabyte
+ 1024 MB = 1 gigabyte
+ 1024 GB = 1 terabyte
+ Mb >< MB, megabits >< megabytes
+ Mb é usado para transmissão
+ MB é para armazenamento
+
+ O computador compreende apenas numeros binarios(0 e 1).
+Para o computador identificar as ondas em binario, o 0 é uma onda curta,
+enquanto o 1 uma onda larga.
+ Ondas binárias são ondas quadradas.
+ Dentro do computador não são numeros, mas sim ondas(sinais). Uma onda
+representa os bits, também chamado de onda digital.
+ Internet é uma rede gigantesca que interliga várias outras redes ao
+redor do mundo e precisamos ter meior físicos para levar esses 
+ sinais de um lado para o outro.
+ A maioria das trasmissões entre continentes não é realizada pelos
+satélites, pois possuem limitações de trafego e sofrem muito com
+interferências e, é por isso que os cabos de fibra ótica devem ser
+passados pelos oceanos.
+Cliente ---> getway(modem) ---> telefonica,antena ---> internet
+onda binaria -modulação-> onda redonda-/
+onda binaria /-demodulação- onda redonda-
+ Ondas binarias, ou ondas quadradas são as que sai do computador e,
+vai para o getway, transformando essas ondas em ondas senoidal,
+essa transformação é precisa pois a telefonica ou antenas não
+entedem ondas quadradas, essa conversão ocorre tanto na ida
+quanto na volta dessas ondas.
+ O instagram por exemplo, os seus arquivos fica em um conjunto
+de servidores, o servidor é localizado pelo seu IP
+ Ao pesquisar por site, a busca passa primeiro pelo servidor DNS, 
+ele pesquisa na lista e passa o IP do site para o getway.
+ Para que que o site tenha endereço e as pessoas acessarem
+ele, é necessario um dominio
+ tld: .com, .io, .online, .com.br 
+ hospedagem é um servidor onde fica os arquivos do site
+ Dominio: nome único, pago anualmente, vários tlds
+ Hospedagem: espaço para armazenar arquivo, pago mensalmente,
+espaço, memoria, recursos
+www.github.com/gustavoguanabara
+www : sub-dominio
+github : dominio
+.com : tld
+/gustavoguanabara :caminho
+Todas essas partes formam um URL
+ 
+ 

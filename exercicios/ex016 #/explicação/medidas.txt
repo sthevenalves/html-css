@@ -1,0 +1,28 @@
+-> medidas absolutas
+cm, mm, in, px, pt, pc
+
+-> Medidas Relativas
+em, ex, rem, vw, vh, %
+
+medidas absolutas
+in -> polegada
+px -> pixel
+pt -> ponto
+pc -> paica
+
+Medidas Relativas
+em -> medida relativa ao tamanho da fonte, relativo ao M maisuculo
+de uma fonte
+ex -> altura x de uma fonte, relativo ao x minusculo
+de uma fonte
+rem -> relativo a fonte que ta configurado no body
+vw -> view wildef, tamanho da tela
+vh -> altura da tela
+
+wight -> peso
+width -> largura
+height -> altura
+
+Recomenda-se sempre ser usado o px e o em
+16px = 1em
+16px é o tamanho normal da fonte

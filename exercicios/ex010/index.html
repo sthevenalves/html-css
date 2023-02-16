@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias HTML5</title>
+</head>
+<body>
+    <p>Como os sites podem ser acessados por diferentes dispositivos. Pensando nisso, os sites precisam ser adaptados para tamanhos de telas diferentes</p>
+    <h1>Imagem Dinâmica</h1>
+    <p>tente abrir esse site em vários dispositivos diferentes ou simplismente aumente e diminua o tamanho do seu navegador</p>
+    <picture>
+        <source media="(max-width:750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width:1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Img Flexivel">
+    </picture>
+    <p>A tag picture ajuda na flexibilidade das imagens, para isso funcionar, ela trabalha com o atributo source:media:type. <br> Na Media, coloca-se (max ou min-width: tamanho da imagem), no srcset o local na imagem e o type, o tipo dela. <br>
+    As imagens que seram trocadas de acorda com o tamanho da tela precisam ta na mesma pasta para funcionar a troca, recomenda-se que sempre coloque 50px a mais do tamanho da imagem, sendo sempre do menor para o maior na ordem, a img src sempre fica por baixo e é a primeira a ser chamada.</p>
+    <h1>Reproduzindo Audio</h1>
+    <p>Vamos aprender a Reproduzir audio</p>
+    <audio src="midias/We Wish You a Merry Christmas (Instrumental Jazz) - E's Jammy Jams.mp3" controls></audio>
+    <!--MP3, WAV, OGG-->
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midias/Waltz of the Flowers (by Tchaikovsky) - Tchaikovsky.mp3" type="audio/mpeg">
+        <p>Infelizmente o seu navegador não tem suporte, caso deseje baixar o audio <a href="midias/Waltz of the Flowers (by Tchaikovsky) - Tchaikovsky.mp3">Clique Aqui!</a></p>
+    </audio>
+    
+    <ul>
+        <li>
+            A tag audio serve para colocar midias tipo audio, sendo musicas, podcasts,etc. <br>
+            Ela funciona da seguinte forma, ao colocar a tag audio, em seguida vem o atributo preload, que indica se o audio sera pre-carregado ou não, ela aceita tres valores:
+        </li>
+        <ul type="square">
+            <li>metadata, vai carregar somente informações sobre o arquivo(tamanho, tempo, etc)
+            <li>none, não vai carregar nada até que o usuario clique no botão do play ou um script inicie a reprodução
+            <li>auto(padrão), vai carregar o arquivo de audio inteiro assim que a página for carregada
+        </ul>
+        <li>O atributo controls vai apresentar o player na tela, caso não seja colocado a tag, o controle será transparente</li>
+        <li>O atributo autoplay, quando inserido, vai iniciar a reprodução do audio assim que a pagina for carregada</li>
+        <li>O atributo loop vai fazer com que o audio seja repetido eternamente assim q terminar a reprodução</li>
+    </ul>
+    <p>Dentro da tag audio, adicionamos varios source com formatos diferentes do mesmo audio. Na parte de cima o formato de minha preferencia. Os demais só serão carregados caso o de cima falhe. Caso todos falhem, criamos um parágrafo que permite o download do arquivo mp3</p>
+    
+</body>
+</html>

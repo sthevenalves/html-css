@@ -1,0 +1,42 @@
+-> Pseudoelemento
+Palavra-chave adicionada às declarações de um
+seletor após dois sinais de dois pontos e permitem 
+que você formate um pedaço específico do 
+elemento referenciado.
+
+Os principais pseudo-elementos usados nas CSS
+são ::before, ::after, ::first-letter, ::first-line.
+
+::before -> antes de um elemento
+Exemplo:
+HTML
+<ul>
+  <li><a href="https://www.cursoemvideo.com/cursos/" 
+  target=_blank>Curso em video</a>
+</ul>
+
+CSS
+a::before {
+contet: '[link]';
+text-decoration: none;
+color: darkgray; }
+
+Antes de todos os links, aparecerá o nome link
+
+---------------------------------------------------------
+
+Posso colocar uma class ou id e no css declarar eles em
+um Pseudoelemento ou elemento
+Exemplo:
+HTML
+<ul>
+  <li><a href="https://www.cursoemvideo.com/cursos/" 
+  target="_blank" class="especial">Curso em video</a>
+</ul>
+
+CSS
+.especial::before{
+content:'@'; }
+
+contet: -> (significa conteúdo) algo que posso escrever,
+colocar símbolos...

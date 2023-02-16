@@ -1,0 +1,75 @@
+id -> indentificação de um elemento
+Em html id = # em css
+
+Exemplo:
+HTML
+<h1 id="principal"> Titulo </h1>
+
+CSS
+h1#principal{
+
+}
+Com a indetificação id, qualquer alteração no
+h1#principal só irá mudar nessa tag
+
+No id, pode apenas colocar um nome de id por elemento,
+ou seja, não pode existir outro elemento como
+#principal, deve-se criar outro nome.
+
+class -> classe de um elemento
+Em html class = . em css
+Quando é necessário aplicar a mesma configurações
+em mais de um elemento, usa-se o class
+Pode-se aplicar mais de um class em um elemento
+
+Exemplo:
+HTML
+<h2 class="basico"> HTML Basico </h2>
+<h2 class="basico"> CSS Basico </h2>
+
+<h2 class="intermediario"> HTML intermediario </h2>
+<h2 class="intermediario"> CSS intermediario </h2>
+
+CSS
+.basico{
+
+}
+
+.intermediario{
+
+} 
+
+Pode-se aplicar mais de um class em um elemento ao separar apenas
+por um espaço
+Exemplo: 
+
+HTML
+<h2 class="basico" class="destaque> CSS Basico </h2>
+
+CSS
+.destaque{
+
+}
+
+Pode-se aplicar um id e uma class no mesmo elemento
+O id sobrepõe o class ou o class sobrepõe o id, a hierarquia 
+vale para o que foi colocado primeiro
+Exemplo
+
+HTML
+<h1 id="principal" class destaque>Criando sites com html e css</h1>
+
+CSS
+h1#principal{
+}
+
+.destaque{
+}
+
+
+id é unico
+class é multiplo
+
+É recomendado a dar nomes para id e class não pela
+sua forma, mas sim pela sua função
+

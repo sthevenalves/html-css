@@ -1,0 +1,40 @@
+-> font-weigth: (peso da fonte)
+lighter - normal - bold - bolder -> peso das fontes
+peso por numeração: 100 ate 900, 400 é o normal
+
+-> font-style: (estilo da fonte)
+italic - normal - obliquo
+
+-> text-decoration:
+underline , overline , line-through ou blink 
+
+-> text-align: (definir o alinhamento horizontal do texto)
+justify - right - center - left
+
+-> text-indent: (espaçamento no inicio do texto)
+
+-> font-size: (tamanho da fonte)
+
+-> font-family: (fontes que serão usadas no texto)
+
+-> margin: auto: centralizar o width(texto)
+
+-> border-radius: arrendodamento das bordas
+
+-> box-shadow: sombreamento do width 
+1px 1px 1px black
+direita, baixo, tonalidade do sombreamento, cor
+
+text-shadow: 1px 1px 1px black (sombreamento do texto)
+direita, baixo, tonalidade do sombreamento, cor
+
+font-family: 'Patrick Hand', cursive, monospace;
+font-weight: bold; 
+font-size: 2em;
+font-style: normal
+
+-> shorthand font: serve para encurtar declarações. 
+Ordem para o shorthand font:
+font-style -> font-weight -> font-size -> font-family
+
+font: normal bold 2em 'Patrick Hand', sans-serif;

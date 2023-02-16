@@ -1,0 +1,86 @@
+-> Pseudoclasses
+Palavra-chave adicionada às declarações de um seletor
+após um sinal de dois pontos e especificam um 
+estado especial de um elemento. 
+Existem várias pseudo-classes para estilos, podemos
+citar :hover, :visited, :active, :checked, :empty e :focus.
+
+:hover -> ação ao passar o mouse por cima
+Exemplo: 
+
+div:hover{
+	background-color: yellow; }
+Ao passar o mouse na div no site, ele ficara amarelo
+
+----------------------------------------------------
+
+:visited ->  indicar se o link em questão já foi 
+visitado pelo usuário.
+Exemplo;
+
+a:visited {
+	color: darkred }
+
+Ao visitar o link, permanecera vermelho escuro
+
+----------------------------------------------------
+
+:active -> quando ativamos o elemento
+Por exemplo, quando clicamos em um link e não 
+soltamos o botão do mouse.
+Exemplo:
+
+a:active{
+	color:yellow; }
+
+Ao clicar no link, ele ficara amarelo
+
+----------------------------------------------------
+
+Menor que(>): significa uma tag que esta dentro 
+de outra, que é filho (child)
+
+Exemplo:
+HTML
+<div>
+	passe o mouse aqui
+	<p> TEXTO ESCONDIDO </P>
+</div>
+
+CSS
+div > p{
+display: none
+}
+O p que esta dentro da div, qualquer alteração feita
+nessa declaração, aferá apenas o p.
+Nesse caso, o "TEXTO ESCONDIDO" não aparecerá
+
+----------------------------------------------------
+
+div:hover > p{
+display: block;
+
+div:hover > p (ao passar o mouse nessa div o paragrafo 
+que esta dentro)
+display: block; (mostrará)
+
+----------------------------------------------------
+
+<div> são divisões que chegam até o final de uma linha
+
+border: 1px solid black (largura, tipo, cor)
+
+text-decoration: none (retira o underline)
+
+
+display: inline-block( coloca tudo na mesma linha)
+
+display: none -> deixar escondido
+
+display: block -> deixar concreto, ocupa toda uma largura
+
+<spam> </spam> é para separar partes do texto(inline-level)
+
+
+
+

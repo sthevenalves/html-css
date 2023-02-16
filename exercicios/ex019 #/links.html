@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /* seletores personalizados
+           # = id
+           . = class
+           : = pseudo-class
+           :: = element
+           > = children
+        */
+     @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Rye&display=swap');
+        a{
+            color: crimson;
+            text-decoration: none;
+            font-weight: bold;
+            font-family: 'Rye', cursive;
+            font-size: 20px;
+        }
+        a:visited{
+            color: rgb(186, 90, 90);
+        }
+        a:hover{
+            color: black;
+
+        }
+        a:active{
+            color: chocolate;
+        }
+        .especial::before{
+            content:'☛';
+            text-decoration: none;
+            font-weight: normal;
+            color: cadetblue;
+        }
+        .especial::after{
+            content: '☚';
+            text-decoration: none;
+            font-weight: normal;
+            color: cadetblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://roadmap.sh/" target="_blank">Roadmaps</a></li>
+        <li><a href="https://monkeytype.com/" target="_blank">Monkeytype</a></li>
+        <li><a href="https://www.cursoemvideo.com/cursos/" target="_blank" class="especial">Curso em video</a></li>
+    </ul>
+</body>
+</html>

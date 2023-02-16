@@ -1,0 +1,121 @@
+-> Sombras nas caixas
+As sombras são muito úteis para dar volume, para dar a sensação de que as caixas
+estão ali realmente.
+
+box-shadow: 1px 3px 5px black;
+Ordem:
+
+1. Deslocamento horizontal(h-offset):
+quanto a sombra vai andar para o lado
+direito (valores negativos causam deslocamento para a esquerda)
+
+2. Deslocamento vertical(v-offset):
+quanto a sombra vai andar para baixo (valores
+negativos causam deslocamento para cima)
+
+3. Embaçamento (blur): quanto a sombra vai se espalhar pelo 
+fundo.
+
+4. Cor (color): cor da sombra. É possível usar transparência.
+
+Exemplo:
+
+<style>
+        body{
+            font: 1em arial, helvetica, sans-serif;
+            background-color: peachpuff;
+        }
+        article#caixa{
+            background-color: snow;
+            width: 400px;
+            margin:auto;
+            padding: 1px 10px;
+            box-shadow: 3px 5px 4px rgba(0, 0, 0, 0.311);
+        }
+    </style>
+</head>
+<body>
+    <article id="caixa">
+        <h1>Usando Sombras</h1>
+        <p>Vamos aprender a usar sombras com esse exemplo 
+		simples</p>
+    </article>
+
+
+
+-> Bordas decoradas
+
+Podemos arredondar os vértices usando uma declaração simples 
+usando apropriedade border-radius.
+
+border-radius: 4px
+
+Na declaração acima, todos os vértices foram levemente 
+arredondados (4px) de forma simétrica. Se for necessário, 
+podemos indicar quatro medidas diferentes, uma
+para cada vértice.
+
+border-radius: 4px 6px 8px 10px;
+ 
+(top-left, top-right, bottom-rigth, bottom-left)
+
+Assim como fizemos com as margens, também é possível indicar 
+apenas dois valores, o que vai agir em vértices intercalados,
+partindo do canto superior esquerdo.
+
+border-radius: 10px 30px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

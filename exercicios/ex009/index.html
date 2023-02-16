@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Link</title>
+</head>
+<body>
+    <h1>Usando Links Externos</h1>
+    <p>Hyperlinks permitem que você ligue um ponto ao outro na world wide web</p>
+    <p>Para criar Hyperlinks, devemos criar âncoras através da tag A. O principal atributo dessa tag é o href, que cria uma referencia hipertexto. </p>
+    <p>Você pode acessar o meu <a href="https://animefire.net/">site de animes preferido</a></p>
+    <p>Você também pode acessar o meu <a href="https://mangalivre.net/">site de mangá preferido</a></p>
+    <h1>Usando links internos</h1>
+    <p>Por padrão, sempre que um vistante clica em um Hyperlink, o site do destino abre na mesma janela, ou seja, o conteúdo anterior deixa de ser exibido para mostrar o novo.</p>
+    <p>Para controlar isso, existe outro propriedade da tag A, que é o target, que suporta os seguintes valores:
+        <ul>
+            <li>Blank (abre em uma nova janela)</li>
+            <li>Self (abre na janela ou frame atual)</li>
+        </ul> </p>
+    <p>Você pode acessar a minha minha playlist <a href="https://open.spotify.com/playlist/6jsWQnpL1URxVSoi0Mb54f?si=0d648d7066a14b93" target="_blank">INDIE</a> do spotify</p>
+    <p>Ou se preferir, a minha playlist <a href="https://open.spotify.com/playlist/7q1YPNCUmkFfcMqi11542P?si=730c11165e004880" target="_self">PHONK</a> do spotify</p>
+    <p>Para link interno, ou link local,</p>
+    <h2>Esse link é seu ou de outros?</h2>
+    <p>Existe un recurso bem interessante para indicar qual é a natureza do destino usando o atributo rel, ele aceita os seguintes valores:</p>
+    <ul>
+        <li>Next (indica que o link é para próxima parte do doc atual)</li>
+        <li>Prev (indica que o link é para parte anterior do doc atual)</li>
+        <li>Author (indica que o link é para o site do autor do artigo)</li>
+        <li>External (indica que o link é para outro site que não parte do site)</li>
+    </ul>
+    <p>Esta é a primeira página do site. Se você quiser, pode acessar também a minha <a href="pag2.html" rel="next" target="_self">segunda página</a></p>
+    <p>Você também pode acessar a nossa <a href="noticias/pag3.html" rel="next" target="_self">página de notícias</a></p>
+
+    <h1>Links para Download</h1>
+    <p>Para add links para download, apos o comando A, no href da um ctrl + space para buscar o arquivo, depois utilizar o comando download = "nome do arquivo" e o type para indicar ao navegador que tipo de arquivo esta sendo baixado, alguns media types bem usados: </p>
+    <ul>
+        <li>application/zip
+        <li>video/mp4</li>
+        <li>audio/mpeg</li>
+        <li>text/html</li>
+        <li>video/h2g4</li>
+        <li>font/ttf</li>
+        <li>text/css</li>
+        <li>video/jpeg</li>
+        <li>image/jpeg</li>
+        <li>text/javascript</li>
+        <li>audio/aac</li>
+        <li>image/png</li>
+    </ul>
+    <ul> 
+        <li><a href="livro/meulivro.pdf" download="meulivro.pdf" type="application/pdf">Baixar o livro em PDF</a></li>
+        <li><a href="livro/meulivro.zip" download="meulivro.pdf"
+        type="application/zip">Baixar livro em ZIP</a></li>
+    </ul>
+    <p>OBS: o arquivo para download deve ta dentro da pasta do site.</p>
+</body>
+</html>

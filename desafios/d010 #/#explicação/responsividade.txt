@@ -1,0 +1,123 @@
+-> Responsividade
+Efeito que ocorre para que textos, imagens, videos possam
+se adpatar de acordo com o tamanho da tela.
+
+-texto:
+Uma forma que pode ser feita para adaptar os textos, é
+definindo a largura mínima e maxima da tela,
+
+min-width: 280px;
+max-width: 800px;
+
+Geralmente o min-width é de 280, por conta das telas de 
+celulares mais antigas, a qual são menores.
+Já o max-width, é entre 800 e 1000, para que a tela
+não fique muito longa e torne cansativo a leitura
+
+margin: auto (centraliza a div)
+
+-imagens:
+Para que possa ocorrer uma responsividade melhor com as
+imagens, a imagem original deve acompanhar o tamanho 
+da tela, para isso:
+
+width: 100%
+
+Faz com que a imagem sempre acompanhe o tamanho da tela
+
+img{
+      width: 100%;
+   }
+
+Quando uma tag esta dentro de duas tags e deseja acessar ela
+no css
+
+Exemplo:
+<main>
+
+	<article>
+		img:
+	</article>
+</main>
+
+Para acessar o img direto do main, basta colocar as tags
+lado a lado, separando elas apenas por um espaço
+
+main img{
+}
+
+-> transition-duration: tempo(s)
+Quando a passar o mouse por cima, vai levar um tempo
+de transição(ele ficara ativo por uns segundos)
+
+Exemplo:
+
+nav > a{
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: 0.5s;
+}
+
+-> line-height (altura da linha)
+Espaço entre as linhas 
+exemplo: 
+line-height: 1em
+
+-> lista css
+
+-list-style-type: (mudar o estilo da li)
+-list-style-position: (mudar a posição da ul)
+-columns: (mudar o numero de colunas)
+
+\00A0 (coloca um espaço)
+
+Exemplo:
+
+aside > ul{
+list-style-type: '\2714\00A0\00A0';
+list-style-position: inside;
+columns: 2;
+}
+
+-Tem que colocar barra invertida para add o codigo do 
+emoji
+
+-> Tem como definir os lugares onde tera borda
+Exemplo:
+
+border-bottom-left-radius:
+
+-> posicion: relative
+
+determina que o elemento será posicionado 
+de acordo com o fluxo natural da página.
+
+-> posicion: absolute
+
+Você pode posicionar qualquer elemento de acordo com o 
+elemento pai que tenha um position diferente de static.
+
+Exemplo:
+
+div.video{
+    background-color: var(--cor5);
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 57%;
+    position: relative;
+}
+
+div.video > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+
+
+

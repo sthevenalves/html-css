@@ -1,0 +1,164 @@
+-> Grouping Tags e  Semantic Tags
+
+A linguagem HTML padrão tinha apenas duas tags de agrupamento
+genérico: a <div> e a <span>. A diferença básica entre elas 
+é que a primeira é um elemento agrupador do tipo block-level 
+e o segundo é inline-level. No mais, eles agem exatamente da
+mesma maneira, servindo para juntar vários outros elementos 
+HTML.
+
+-> principais agregadores semânticos 
+-Header
+Cria áreas relativas a cabeçalhos. Normalmente inclui 
+títulos <h1> - <h6> e subtítulos. Podem também conter 
+menus de navegação.
+
+-Nav
+Define uma área que possui os links de navegação pela
+estrutura de páginas que vão compor o website.
+Um <nav> pode estar dentro de um <header>.
+
+-Main
+É um agrupador usado para delimitar o conteúdo
+principal do nosso site. 
+
+-Section
+Cria seções para sua página.
+
+-Article
+Um artigo é um elemento que vai conter um conteúdo que 
+pode ser lido de forma independente e dizem respeito a 
+um mesmo assunto.
+Podemos usar um <article>
+para delimitar um post de blog ou fórum, uma notícia, etc.
+
+-Aside
+Delimita um conteúdo periférico e complementar ao conteúdo 
+principal de um artigo ou seção. 
+Normalmente um conteúdo <aside> está posicionado ao lado de 
+um determinado texto ou até mesmo no meio dele
+
+-Footer
+Cria um rodapé para o site inteiro, seção ou artigo.
+É um conteúdo que não faz parte
+diretamente do conteúdo nem é um conteúdo periférico
+(o que caracterizaria um <aside>), mas possui informações 
+sobre autoria do conteúdo, links adicionais, mapa
+do site, documentos relacionados.
+
+Exemplo: 
+
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>Esportes | Política | Tecnologia</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Noticias sobre o Brasil</h2>
+                <p>Texto do artigo</p>
+                <aside>
+                    <p>Escrito por Joaquim Alves</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por ssAlves</p>
+    </footer>
+
+</body>
+
+CSS-----------------------------------------------------
+
+<style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+        h1{
+            text-align: center;
+            height: 40px;
+            width: 200px;
+            margin: auto;
+            padding-bottom: 10px;
+        }
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 5px;
+            box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.596);
+        }
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 5px;
+            box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.596);
+        }
+        nav{
+            background-color: rgb(156, 155, 155);
+            padding: 3px;
+            text-align: center;
+            box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.596);
+
+        }
+
+        nav > a{
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+            margin-right: 30px;
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.437);
+            
+            
+        }
+        nav > a:hover{
+            color: black;
+        }
+        footer > p{
+            margin: 6px;
+        }
+
+        article{
+            background-color: rgb(185, 184, 184);
+            padding: 5px;
+        }
+        article > aside{
+            background-color: white;
+        }
+
+        article > aside > p{
+            padding: 3px;
+        }
+
+        footer{
+            background-color: black;
+            color: blueviolet;
+            text-align: center;
+            padding: 1px;
+            
+        }
+        section > p{
+        font-weight: bold;
+        margin-left: 6px;
+        }
+    </style>
+
+
+
+
+
+
