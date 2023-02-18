@@ -1,0 +1,33 @@
+-> vínculo (attachment)
+A última propriedade que podemos configurar é o vínculo 
+(attachment) da imagem de fundo com o resto do documento, 
+principalmente se o conteúdo for maior do que a altura 
+da página e seja necessário vazar uma rolagem vertical. 
+
+-> background-attachment
+
+scroll (padrão) - a imagem de fundo vai rolar junto com 
+o conteúdo
+
+fixed - A imagem de fundo vai ficar fixada enquanto o 
+conteúdo vai sendo rolado.
+
+-> shorthand background
+
+• background-color
+• background-image
+• background-position
+• background-repeat
+• background-attachment 
+
+exemplo: 
+background-color: black;
+background-image: url('imagens/wallpaper002.jpg');
+background-position: center center;
+background-repeat: no-repeat;
+background-attachement: fixed;
+
+background: black url('imagens/wallpaper002.jpg')
+center center no repeat fixed;
+
+
