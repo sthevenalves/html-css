@@ -1,1 +1,101 @@
+-> Maneiras de preencher uma caixa
+
+background-color: skyblue;
+
+background-image: linear-gradient(to bottom, 
+yellow, orange);
+
+background-image: url('');
+
+exemplo
+
+HTML 
+<div class="quadrado" id="q1"></div>
+
+<div class="quadrado" id="q2"></div>
+
+<div class="quadrado" id="q3"></div>
+
+CSS
+div#q1{
+background-color: skyblue;
+        }
+div#q2{
+background-image: linear-gradient(to bottom, yellow, 
+orange);
+        }
+div#q3{
+background: url('imagens/pattern003.png');
+        }
+    
+-> background-image: url('');
+Serve para  aplicar uma
+imagem de fundo através de um endereço informado 
+pela função url().
+Esse recurso também pode ser usado ao <body> do seu site 
+e o papel de parede será aplicado.
+
+Quando o tamanho da caixa é maior que o tamanho da imagem, 
+por padrão, a imagem será repetida nos dois eixos 
+(eixo x e eixo y) quantas vezes for necessário
+para cobrir a extensão da caixa contêiner. 
+
+-> background-repeat:
+
+-repeat (por padrão, faz a imagem se repetir ate a tela
+estiver toda preenchida)
+
+-no-repeat (imagem não ira se repitir)
+
+-repeat-x (a imagem ira se repitir no eixo x)
+
+-repeat-y (a imagem ira se repitir no eixo y)
+
+
+-> background-position:
+
+left top    | center top    | right top
+
+left center | center center | right center
+
+left bottom | center bottom | right bottom
+
+Outra coisa que podemos fazer é redimensionar a imagem para 
+forçá-la a caber na caixa. 
+
+Por padrão, nenhum redimensionamento será aplicado, e a 
+imagem será exibida do seu tamanho natural. 
+
+Porém, podemos usar a propriedade backgroundsize para 
+alterar esse comportamento. 
+
+-> background-size:
+
+auto (padrão) - a imagem de fundo será aplicada em seu 
+tamanho original.
+
+[length]px - Redimensiona a largura da imagem e faz a 
+altura se adaptar automaticamente.
+
+[length]% - Podemos também informar as duas dimensões na 
+sequência ou também usar valores
+percentuais.
+
+cover - Muda o tamanho da imagem para que ela seja sempre 
+totalmente exibida na tela, sem nenhum corte.
+
+contain - Redimensiona a imagem para que ela cubra o 
+contêiner, mesmo que para isso ocorram alguns eventuais 
+cortes.
+
+Para que a imagem se encaixe melhor, deve-se ajustar a
+altura da tela(vh) view height, para melhor preenchimento
+height: 100vh
+
+
+
+
+
+
+
 
