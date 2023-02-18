@@ -1,0 +1,85 @@
+Vamos começar criando uma hierarquia simples 
+entre dois blocos: 
+
+HTML
+<section id="container">
+
+        <article id="conteudo">
+
+        </article>
+
+</section>
+
+CSS
+<style>
+        #container{
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%;
+
+            position: relative;
+            height: 90vh;
+            padding: 10px;
+            background-color: purple;
+        }
+        #conteudo{
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%;
+
+            position: absolute;
+            height: 200px;
+            width: 400px;
+            background-color: yellow;
+
+            left: 50%;
+            top: 50%;
+
+            transform: translate(-50%,-50%);
+            
+
+        }
+    </style>
+
+Quando definimos um bloco com posicionamento absoluto, 
+podemos personalizar a sua posição exata através das 
+propriedades left e top. Como queremos posicionamento 
+centralizado, vamos configurar os dois na metade do 
+contêiner: 
+
+Para mover o conteudo para o centro, é usado o
+comando transform: translate()
+nele aceita valores px e %, ele movimenta
+left, top, sendo valores negativos leva a
+posição contrarias
+
+Regra geral
+o container
+posicion: relative(padrao)
+
+conteudo
+position: absolute;
+left: 50%;
+top: 50%;
+transform: translate(-50%,-50%);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
