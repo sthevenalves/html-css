@@ -1,0 +1,104 @@
+Hierarquia de tabelas(simples)
+
+Table = tabela{
+	table row = linha de tabela{
+
+		table header = cabeçalho de tabela{
+
+			tabela data = dado de tabela
+							    }
+					   }
+		  }
+
+table row
+<tr> </tr>
+
+table data
+<td> </td>
+
+table data fica dentro das table row
+Cada linha de uma tabela é uma table row e cada
+dado de uma table row é uma table data
+
+-> border
+border-collapse: (juntar as bordas entre as linhas e colunas
+de uma tabela)
+
+-separed
+-collapse
+
+Para uma tabela ficar com bordas para separar dados,
+a tag border é configurada na td
+
+É opcional o fechamento da tag td
+ 
+
+Exemplo:
+<table>
+        <tr class> <!--primeira linha-->
+            <td>A1</td> <!--tabela data-->
+            <td>B1</td>
+            <td>C1</td>
+        </tr> 
+        <tr> <!--segunda linha-->
+            <td>A2</td>
+            <td>B2</td>
+            <td>C2</td>
+            
+        </tr>
+        <tr> <!--terceira linha-->
+            <td>A3</td>
+            <td>B3</td>
+            <td>C3</td>
+        </tr>
+        <tr> <!--quarta linha-->
+            <td>A4</td>
+            <td>B4</td>
+            <td>C4</td>
+        </tr>
+    </table>
+
+
+
+-> Alinhamento de tabelas
+text-align: (alinhamento vertical)
+-left,center,right
+
+vertical-align: (alinhamento horizontal)
+-top, middle, bottom
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
