@@ -9,12 +9,17 @@ Table = tabela{
 							    }
 					   }
 		  }
+table header (cabeçalho)
+<th> </th>
 
-table row
+table row (linha)
 <tr> </tr>
 
-table data
+table data (dados da linha)
 <td> </td>
+
+table header (rodapé)
+<th> </th>
 
 table data fica dentro das table row
 Cada linha de uma tabela é uma table row e cada

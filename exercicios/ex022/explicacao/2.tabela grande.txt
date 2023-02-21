@@ -1,0 +1,111 @@
+Anatomia para tabelas grandes
+table
+
+CAPTION(LEGENDA DA TABELA)
+fica abaixo da tage <table>
+
+THEAD
+	TR, TD, TH
+TBODY
+	TR, TD, TH
+TFOOT
+	TR, TD, TH
+
+Titulos de colunas recebem scope="col"
+
+Titulos de linhas recebem scope="row"
+
+Exemplo-01
+<tr>
+    <th scope="col">Estado</th>
+    <th scope="col">População</th>
+</tr>
+
+Exemplo-02
+
+<tr>
+    <th scope="row">Total de Habitantes</th>
+    <td>210.147.125</td>
+</tr>
+
+No exemplo-01 o <th> recebe scope="rol" por
+estado e população serem titulos de colunas
+
+Estado 		População
+São Paulo	 	45.919.049
+Minas Gerais 	21.168.791
+
+Já no Exemplo-02, o <th> recebe scope="row" por
+Total de Habitantes ser titulo de linha
+
+Total de Habitantes	210.147.125
+
+
+Para mudar a largura da linha central de uma tabela
+basta criar um style dentro da tag <th>
+Exemplo:
+<thead>
+
+  <tr>
+     <th scope="col">Estado</th>
+     <th scope="col" style="width: 50px;">População</th>
+  </tr>
+
+</thead>
+
+-> Efeito Zebrado
+
+nth-child(xn) (pseudo-classe)
+Esse comando significa que a cada x numero, ele irá pular
+para próxima linha
+Exemplo:
+
+tbody > tr:nth-child(2n){
+            background-color: lightgray;
+        }
+
+No caso desse exemplo, ele ira pular 1 linha, e na
+segunda linha irá ficar com cor lightgray, essa sequencia
+irá continuar até o final da coluna
+Outro caso, é que no lugar do xn, pode colcocar par ou
+impar
+-odd (impar) (2n-1)
+-even (par)  (2n)
+
+-> Fixar cabeçalho
+Para isso a table precisa estar com position:relative e
+no thead > tr > th colocar position:sticky, top: -1px
+o background-color coloca o mesmo que estava configurado
+no thead
+Exemplo:
+
+table{
+    width: 500px;
+    border-collapse: collapse;
+    position: relative;
+        }
+
+thead > tr > th {
+    position: sticky;
+    top: -1px;
+    background-color: gray;
+	  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
