@@ -40,6 +40,9 @@ Total de Habitantes ser titulo de linha
 
 Total de Habitantes	210.147.125
 
+Quando ocorre mesclagem de células, o scope
+fica como colgroup ou rowgroup
+
 
 Para mudar a largura da linha central de uma tabela
 basta criar um style dentro da tag <th>

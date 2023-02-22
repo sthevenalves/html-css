@@ -30,3 +30,6 @@ Exemplo-02:
     <td>I</td>
 
      </tr>
+
+-> scope
+Serve para indicar o tipo 
