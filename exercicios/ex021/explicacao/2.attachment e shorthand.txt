@@ -30,4 +30,9 @@ background-attachement: fixed;
 background: black url('imagens/wallpaper002.jpg')
 center center no repeat fixed;
 
+---------------------------------------------------------
+
+font-variant: small-caps; 
+(altera o formato de letras maisculas)
+
 

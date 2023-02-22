@@ -53,7 +53,7 @@ posição contrarias
 
 Regra geral
 o container
-posicion: relative(padrao)
+position: relative(padrao)
 
 conteudo
 position: absolute;

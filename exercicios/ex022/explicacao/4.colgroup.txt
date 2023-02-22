@@ -1,0 +1,92 @@
+-> Colgroup: (Agrupamento de colunas)
+Usado dentro da tag <table>, essa tag ajuda
+a aplicar css nas colunas com mais vacilidade
+Exemplo:
+
+<colgroup>
+      <col class="cnome">
+      <col class="csexo">
+      <col class="idadec">
+      <col class="cproft">
+</colgroup>
+
+Dentro da tag colgroup, cria-se <col>, cada col equivale
+a uma coluna da tabela
+
+<colgroup>
+       <col class="cnome">
+       <col class="cgrupo" span="2">
+       <col class="cproft">
+</colgroup>
+
+Caso queira espandir uma col para outra, basta criar
+uma span="x", mesmo tendo 4 colunas, criando 3 col
+e caso deseja que a outra coluna tenha as mesmas
+configurações, basta usar uma span na coluna do lado
+
+Caso a coluna do lado ja tenha uma configuração,
+essa configuração irá pular para proxima coluna.
+Exemplo CSS:
+
+col.cnome{
+        background-color: bisque;
+      }
+col.cgrupo{
+        background-color: aquamarine;
+      }
+
+-> Tabelas Responsivas
+Para permitir que a tabela se torne adaptavel
+para telas menores, deve-se colocar toda a tabela
+dentro de uma div com um id e usar a tag overflow,
+que significa (tudo que transborda), ela é usada
+dentro do style.
+
+Exemplo:
+
+<div id="container">
+<table>
+            <caption>Tabelas Responsivas</caption>
+            <thead>
+                <tr>
+                    <th>Produto</th>
+                    <th>Jan</th>
+                    <th>Fev</th>
+                    <th>Mar</th>
+                    <th>Abr</th>
+                    <th>Mai</th>
+                    <th>Jun</th>
+                    <th>Jul</th>
+                    <th>Ago</th>
+                    <th>Set</th>
+                    <th>Out</th>
+                    <th>Nov</th>
+                    <th>Dez</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Tv 40"</td>
+                    <td>01</td>
+                    <td>04</td>
+                    <td>07</td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>10</td>
+                    <td>05</td>
+                    <td>02</td>
+                    <td>01</td>
+                    <td>01</td>
+                    <td>04</td>
+                    <td>16</td>
+                </tr>
+</table>
+</div>
+
+CSS
+
+div#container{
+            
+            overflow-x: scroll;
+        }
+
