@@ -65,11 +65,45 @@ da primeira pagina, no iframe dentro do site, em vez
 de ir para outro site, ele ira carregar o link dentro
 do quadro.
 
+-> srcdoc = " "
+parametro usado no iframe, nela pode usar html dentro
+das aspas
+Exemplo:
+<iframe srcdoc="<h1> escolha uma das opções acima</h1> 
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing 
+elit. Accusantium, voluptatem delectus, laborum at, 
+aspernatur debitis non quasi ullam reprehenderit 
+similique laudantium voluptate ut. Eos, doloribus 
+praesentium excepturi aliquid beatae ducimus?</p>" 
+
+ id="tela" name="frame">
+
+Quando for colocar imagens, é usado aspas simples
+<img src='' > </img>
 
 
+Não colocar conteúdos muito importante para o site
+dentro de iframes, pois o google pode acabar não
+reconhecendo
 
+-> sandbox
+Criar proteção nos iframes para caso de copia ilegal de
+dados dos usuarios
 
+<iframe src="pag-extra/pag04.html" sandbox="sandbox">
+	</iframe>
 
+-> referrerpolicy
+parametro para aumentar a segurança do iframe, seu
+valor padrao é no-referrer
+
+referrerpolicy="no-referrer" 
+
+Caso queira alguma permissão no iframe, no sandbox
+usa-se: 
+sandbox="allow-same-origin ctrl+space" 
+		ou
+sandbox="ctrl+space"
 
 
 
