@@ -47,7 +47,23 @@ Exemplo:
 <iframe src="https://roadmap.sh/" 
 frameborder="0" scolling="auto">
 
+-> Navegação no iframe
+Para configurar iframes de sites dentro do site para
+multipla escolha em um quadro, usa-se 'name' dentro
+do iframe e o no target dentro da tag <a>, coloca
+o nome escolhido da configuração name.
+Exemplo:
+<a href="pag-extra/pag01.html" 
+target="frame">primeira página</a>
 
+<iframe src="" id="tela" name="frame">
+    <p>Inlizmente seu navagador não é compatível</p>
+     </iframe>
+
+Dessa forma, assim que o usuario acessar o link
+da primeira pagina, no iframe dentro do site, em vez
+de ir para outro site, ele ira carregar o link dentro
+do quadro.
 
 
 

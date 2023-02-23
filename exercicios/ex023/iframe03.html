@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iframes</title>7
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        iframe#tela{
+            width: 95vw;
+            border: 2px solid rgba(0, 0, 0, 0.628);
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias inventore reprehenderit obcaecati impedit temporibus nisi iste ipsam tempore praesentium nam dolorum enim vitae, beatae eveniet repellendus magni, doloribus facere cumque! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi esse recusandae eius amet perspiciatis libero, modi iusto nostrum ratione ad quia facere deleniti ipsum laborum omnis molestiae ut nemo est.</p>
+
+    <ul>
+        <li><a href="pag-extra/pag01.html" target="frame">primeira página</a></li>
+        <li><a href="pag-extra/pag02.html" target="frame">segunda página</a></li>
+        <li><a href="pag-extra/pag03.html" target="frame">terceira página</a></li>
+    </ul>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium, voluptatem delectus, laborum at, aspernatur debitis non quasi ullam reprehenderit similique laudantium voluptate ut. Eos, doloribus praesentium excepturi aliquid beatae ducimus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, nulla aliquid? Minus ducimus blanditiis in dolorum excepturi quos, tenetur provident neque! Minus, voluptate! Laudantium labore deleniti eaque dignissimos ratione numquam!</p>
+
+        <iframe srcdoc="<h1> escolha uma das opções acima</h1> <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium, voluptatem delectus, laborum at, aspernatur debitis non quasi ullam reprehenderit similique laudantium voluptate ut. Eos, doloribus praesentium excepturi aliquid beatae ducimus?</p>" 
+        id="tela" name="frame">
+            <p>Inlizmente seu navagador não é compatível</p>
+        </iframe>
+    
+</body>
+</html>
