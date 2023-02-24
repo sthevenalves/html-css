@@ -105,6 +105,13 @@ sandbox="allow-same-origin ctrl+space"
 		ou
 sandbox="ctrl+space"
 
+----------------------------------------------------------
+
+Dica!
+Para voltar uma página na hora de add imagens, usa-se
+
+-->	'../'
+
 
 
 
