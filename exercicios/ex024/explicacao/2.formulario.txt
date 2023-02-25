@@ -1,0 +1,103 @@
+-> Método padrão de envio
+Usado dentro da tag label como method
+
+- Get (padrão, os dados aparece na url)
+Usado quando a url é compartilhavel
+Não podem ultrapassar 3000 letras
+Não pode usar em campos sensível: senhas, 
+cartao de credito,etc
+
+- Post (os dados não aparece na url)
+
+<form method="get"> </form>
+
+->types
+-password (usados para senhas)
+-reset (para limpar a caixa de formulario)
+Exemplo:
+
+<p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+->requerid
+Para que o usuario não tente enviar o formulario sem
+preencher os campos do formulario
+
+-> minlenght e maxlenght
+lenght é comprimento, ou seja, min e max de 
+comprimento permitido de letras no formulario
+
+
+Exemplo:
+
+<p>
+  <label for="iusu">Usuario: </label>
+  <input type="text" name="usu" id="iusu" required 
+	minlength="5" maxlength="15">
+</p>
+
+->placeholder
+usado para escrever detro da caixa no formulario.
+
+Exemplo:
+<input type="password" name="senha" id="isenha" 
+required minlength="8" placeholder="minimo 8 letras">
+
+-> O autocomplete pode ser usado dentro do input para ajudar
+no preenchimento de dados com configurações mais específicas
+Para isso, o autocomplete deve ta on na tag form, apos isso,
+so colocar autocomplete no input e add a opção de 
+autocomplemento desejado.
+Exemplo:
+
+<form autocomplete="on">
+
+p>
+   <label for="iusu">Usuario: </label>
+   <input type="text" name="usu" id="iusu"
+	 autocomplete="username">
+        </p>
+<p>
+    <label for="isennha">Senha:</label>
+    <input type="password" name="senha" id="isenha"  
+	autocomplete="current-password">
+        </p>
+
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

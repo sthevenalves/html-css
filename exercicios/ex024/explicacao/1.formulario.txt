@@ -26,7 +26,7 @@ Cada input:text tem um name e um id.
 É ativado quando clicado em submit, nele fica o tipo de
 linguagem onde sera direcionado os dados do usuario
 
--> <form autocomplete="off">
+-> <form autocomplete="off"> (autocomplete)
 Usado para não aparecer o nomes usados anteriormente dentro
 da caixa de formulario
 
@@ -53,4 +53,27 @@ Exemplo:
 
       <p><input type="submit" value="Enviar"></p>
     </form>
+
+-> input de submit e limpar dados no formulario
+
+<p>
+     <input type="submit" value="Enviar">
+     <input type="reset" value="Limpar">
+   </p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
