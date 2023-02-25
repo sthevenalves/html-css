@@ -1,0 +1,56 @@
+-> Formulario
+Para criar um formulario, primeiro deve-se criar a
+tag <form> </form>, em seguida criar parágrafos
+dentro da form dos nomes do formulario que deseja criar.
+
+Com os nomes criados, após o nome, criar um input
+do tipo text.
+Por final, para submeter(enviar), cria-se um nova
+paragrafos com um input do tipo submit.
+Exemplo:
+
+<form>
+
+  	<p>Nome: <input type="text" name="nome" id="nome"></p>
+
+  	<p>Sobrenome: <input type="text" name="sobrenome" 
+		id="sobrenome"></p>
+
+ 	<p><input type="submit" value="Enviar"></p>
+
+</form>
+
+Cada input:text tem um name e um id.
+
+-> action
+É ativado quando clicado em submit, nele fica o tipo de
+linguagem onde sera direcionado os dados do usuario
+
+-> <form autocomplete="off">
+Usado para não aparecer o nomes usados anteriormente dentro
+da caixa de formulario
+
+É necessario identificar todos os campos de entrada:
+-name (mais útil para html e php) 
+-id (mais útil para js e usar no label)
+No for do label, deve-se colocar o nome ou id
+
+-> Label
+Ela especifica qual o "rótulo" do input (a que se refere o 
+input, como por exemplo envolvê-la em um texto “Nome completo”), 
+e ajuda na experiência do usuário durante a utilização e 
+preenchimento do formulário.
+Não se faz input sem se relacionar label, pois dificulta
+para o navegador identificar o relacionamento entre eles
+Exemplo:
+
+<form autocomplete="off">
+      <p><label for="inome">Nome:</label> <input type="text" 
+		name="nome" id="inome"></p>
+
+      <p><label for="isobrenome">Sobrenome:</label> <input 
+	type="text" name="isobrenome" id="sobrenome"></p>
+
+      <p><input type="submit" value="Enviar"></p>
+    </form>
+
