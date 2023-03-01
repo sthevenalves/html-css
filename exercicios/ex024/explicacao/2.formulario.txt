@@ -27,7 +27,7 @@ pattern: inicia com ^ e finalzia com $
 
 Exemplo:
 pattern="^\(\d{2}\)\d{4,5}-\d{4,5}$"
-		(xx) XXXX-XXXX
+		 (XX) XXXX-XXXX
 -email (colocar email, mas não o recomendado)
 
 ->requerid (<input>)
@@ -44,15 +44,17 @@ usado para escrever detro da caixa no formulario.
 -> O autocomplete pode ser usado dentro do input para ajudar
 no preenchimento de dados com configurações mais específicas
 Para isso, o autocomplete deve ta on na tag form, apos isso,
-so colocar autocomplete no input e add a opção de 
-autocomplemento desejado.
+colocar autocomplete no input e add a opção de 
+autocomplemente desejado.
 <label autocomplete="on">
 <input autocomplete="ctrl+space"> 
 
 -> step (<input>)
 Usado em numeração ou datas, define o ponto de partida
-no formulario, o valor inicial. 
-<input step="0.1">
+no formulario, o valor inicial, com o valor definido,
+ao aumentar ou diminuir a contagem, irá pular com o 
+step definido
+<input step="0.1"> (0.1, 0.2, 0.3)
 
 -> fildset (grupo de campos)
 Envelopa ele em todos os campos dentro do form
@@ -71,8 +73,9 @@ Ele serve para agrupar campos semelhantes
 	</fieldset>
 </form>
 
-->types (<input>)
--> checkbox (caixa de checagem)
+-> types (<input>)
+
+- checkbox (caixa de checagem)
 permitir que a pessoa usuária da aplicação selecione uma ou 
 mais alternativas entre as opções disponíveis.
 
@@ -82,15 +85,14 @@ mais alternativas entre as opções disponíveis.
 ( ) Tênis
 Nele, pode escolher mais de uma opção
 
-->types (<input>)
--> Radio
+- Radio
 Chamado "radio button", que nada mais é que uma 
 opção que pode ser marcada ou desmarcada
  Sexo:
 ( ) masculino ( ) feminino
 Para que o usuário possa selecionar apenas uma opção, o
-campo name deve ter o mesmo nome, tipo o name de 
-masculino e feminino forem o mesmo.
+campo name deve ter o mesmo nome, nesse caso o name de 
+masculino e feminino seram o mesmo.
 
 Quando um input ta relacionado com um label, ao clicar
 no nome de uma caixa de checagem, ele é selecionado.

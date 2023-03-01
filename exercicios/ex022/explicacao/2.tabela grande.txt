@@ -2,7 +2,7 @@ Anatomia para tabelas grandes
 table
 
 CAPTION(LEGENDA DA TABELA)
-fica abaixo da tage <table>
+fica abaixo da tag <table>
 
 THEAD
 	TR, TD, TH

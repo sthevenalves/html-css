@@ -10,21 +10,15 @@ um site.
 -framborder ( borda do quadro)
 O padrao do framborder é 0, ou seja, sem borda
 
-Exemplo:
-<p>Acessando o site do 
-    <iframe src="https://www.cursoemvideo.com" 
-	frameborder="0"></iframe>
-para aprender a programar</p>
-
 Tem sites que o iframe não funciona, por segurança
 
 Caso o iframe não for compativel, entre o iframe
-e /iframe coloca-se um link
+e /iframe coloca-se um link de verificação
 
 Tamanho padrao do iframe
 300x150 (px)
 
-Tem como configurar o tamanho e as bordasdo iframe no css
+Configurase o tamanho e as bordas do iframe no css
 <style>
         iframe{
             width: 400px;
@@ -82,9 +76,9 @@ Quando for colocar imagens, é usado aspas simples
 <img src='' > </img>
 
 
-Não colocar conteúdos muito importante para o site
-dentro de iframes, pois o google pode acabar não
-reconhecendo
+Colocar conteúdos muito importante para o site
+dentro de iframes pode ser prejudicial, pois o google 
+pode acabar não reconhecendo
 
 -> sandbox
 Criar proteção nos iframes para caso de copia ilegal de

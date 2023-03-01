@@ -20,12 +20,12 @@ a uma coluna da tabela
 </colgroup>
 
 Caso queira espandir uma col para outra, basta criar
-uma span="x", mesmo tendo 4 colunas, criando 3 col
+uma span="x", mesmo tendo 4 colunas, criando 3 <col class=>
 e caso deseja que a outra coluna tenha as mesmas
 configurações, basta usar uma span na coluna do lado
-
 Caso a coluna do lado ja tenha uma configuração,
 essa configuração irá pular para proxima coluna.
+
 Exemplo CSS:
 
 col.cnome{

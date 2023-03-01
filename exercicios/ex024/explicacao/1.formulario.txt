@@ -33,7 +33,7 @@ da caixa de formulario
 É necessario identificar todos os campos de entrada:
 -name (mais útil para html e php) 
 -id (mais útil para js e usar no label)
-No for do label, deve-se colocar o nome ou id
+No 'for' do label, deve-se colocar o nome ou id desejável
 
 -> Label
 Ela especifica qual o "rótulo" do input (a que se refere o 
