@@ -11,69 +11,94 @@ cartao de credito,etc
 
 <form method="get"> </form>
 
-->types
+->types (<input>)
 -password (usados para senhas)
 -reset (para limpar a caixa de formulario)
+-time (colocar hora)
+-month (data com mes e ano)
+-date (data com dia, mes e ano
+
+-tel (telefone) - pattern (definir padrão)
+
+pattern: inicia com ^ e finalzia com $
+
+\ (ao usar um caractere)
+\d{x} (para definir quantos digitos tera)
+
 Exemplo:
+pattern="^\(\d{2}\)\d{4,5}-\d{4,5}$"
+		(xx) XXXX-XXXX
+-email (colocar email, mas não o recomendado)
 
-<p>
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Limpar">
-        </p>
-
-->requerid
+->requerid (<input>)
 Para que o usuario não tente enviar o formulario sem
 preencher os campos do formulario
 
--> minlenght e maxlenght
+-> minlenght e maxlenght (<input>)
 lenght é comprimento, ou seja, min e max de 
 comprimento permitido de letras no formulario
 
-
-Exemplo:
-
-<p>
-  <label for="iusu">Usuario: </label>
-  <input type="text" name="usu" id="iusu" required 
-	minlength="5" maxlength="15">
-</p>
-
-->placeholder
+->placeholder (<input>)
 usado para escrever detro da caixa no formulario.
-
-Exemplo:
-<input type="password" name="senha" id="isenha" 
-required minlength="8" placeholder="minimo 8 letras">
 
 -> O autocomplete pode ser usado dentro do input para ajudar
 no preenchimento de dados com configurações mais específicas
 Para isso, o autocomplete deve ta on na tag form, apos isso,
 so colocar autocomplete no input e add a opção de 
 autocomplemento desejado.
-Exemplo:
+<label autocomplete="on">
+<input autocomplete="ctrl+space"> 
 
-<form autocomplete="on">
+-> step (<input>)
+Usado em numeração ou datas, define o ponto de partida
+no formulario, o valor inicial. 
+<input step="0.1">
 
-p>
-   <label for="iusu">Usuario: </label>
-   <input type="text" name="usu" id="iusu"
-	 autocomplete="username">
-        </p>
-<p>
-    <label for="isennha">Senha:</label>
-    <input type="password" name="senha" id="isenha"  
-	autocomplete="current-password">
-        </p>
+-> fildset (grupo de campos)
+Envelopa ele em todos os campos dentro do form
+Ele serve para agrupar campos semelhantes
+-> legend (add uma legenda no fildset)
+<form>
+	<fieldset>
+		<legend>Dados Pessoais</legend>
 
+	<label for="iemail">E-mail</label>
+      <input type="email" name="email" id="iemail"
+
+	<label for="itel">Telefone</label>
+      <input type="tel" name="tel" id="itel" 
+
+	</fieldset>
 </form>
 
+->types (<input>)
+-> checkbox (caixa de checagem)
+permitir que a pessoa usuária da aplicação selecione uma ou 
+mais alternativas entre as opções disponíveis.
 
+ Esportes favoritos
+( ) Futebol
+( ) Basquete
+( ) Tênis
+Nele, pode escolher mais de uma opção
 
+->types (<input>)
+-> Radio
+Chamado "radio button", que nada mais é que uma 
+opção que pode ser marcada ou desmarcada
+ Sexo:
+( ) masculino ( ) feminino
+Para que o usuário possa selecionar apenas uma opção, o
+campo name deve ter o mesmo nome, tipo o name de 
+masculino e feminino forem o mesmo.
 
-
-
-
-
+Quando um input ta relacionado com um label, ao clicar
+no nome de uma caixa de checagem, ele é selecionado.
+ 
+-> checked (<input>)
+Deixar como marcação padrão dentro do checkbox e radio,
+quando colocado, o site ira iniciar com a caixa com 
+checked selecionado
 
 
 

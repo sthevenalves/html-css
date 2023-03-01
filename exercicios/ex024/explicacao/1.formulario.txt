@@ -61,8 +61,10 @@ Exemplo:
      <input type="reset" value="Limpar">
    </p>
 
-
-
+-> Value
+Nomes autoexplicativos para a função type, como o
+submit e o reset.
+Usa-se dentro do <input>
 
 
 
