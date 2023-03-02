@@ -9,6 +9,9 @@ cartao de credito,etc
 
 - Post (os dados não aparece na url)
 
+- Sempre que for usar elementos que passe de 3 mil
+bytes tem que usar o post
+
 <form method="get"> </form>
 
 ->types (<input>)
@@ -17,7 +20,10 @@ cartao de credito,etc
 -time (colocar hora)
 -month (data com mes e ano)
 -date (data com dia, mes e ano
-
+-color (para mudar cor, usa-se value, com cor em
+ hexadecimal)
+-range (Colocar níveis, configura-se os niveis com min e max)
+-file (Para add arquivos do tipo foto, nesse type usa-se o método post)
 -tel (telefone) - pattern (definir padrão)
 
 pattern: inicia com ^ e finalzia com $
