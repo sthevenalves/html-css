@@ -1,2 +1,38 @@
--> Media Queries
+-> Media Queries = Media Type + Media feature
 Estrutura do CSS que permite aplicar estilizações especificas para uma página web de acordo com certas condições, fazendo assim com esta página possa se adequar ao layout de tela em diferentes tamanhos e tipos de mídia.
+
+-> Media Types (usado no link:css)
+media="sceen" (somente para tela)
+media="all" (para toda as medias)
+media="print" (para impressora)
+
+-> Criando media query
+1.Cria-se um link:css com media="print"
+2.No estilo faz as configurações que vai ter quando for feito a impressão
+obs: serão criado dois link:css, uma para o site(screen) e outra para o modo impressão(print)
+
+-> Media feature (usado no link:css)
+Quando é usado media type, pode ser informado media feature
+
+-portrait (altura > largura) -> em pe
+-landscape (largura > altura) -> deitado
+
+Para usar essas propriedades, é necessario uma orietation para informar qual o modo que a tela esta.
+
+media="screen and (orientacion: portrait)"
+
+media="screen and (orientacion: landscape)"
+
+O orientation é necessario que esteja entre parenteses
+
+
+
+
+
+
+
+
+
+
+
+
