@@ -1,0 +1,46 @@
+(form07)
+-> Select
+Representa um controle que apresenta um menu de opções. 
+As opções dentro do menu são representadas pelo elemento <option> , que podem ser agrupados por elementos <optgroup> 
+As opções podem ser pré-selecionadas para o usuário.
+
+<label for=""></label>
+<select name="" id="">
+
+<optgroup> (agrupamento)
+<option value=""></option> (opções)
+<option value=""></option> (opções)
+</optgroup>
+ 
+</select>
+
+-> option
+É usado para criar um controle que representa um item dentro de um elemento HTML5 <select> , <optgroup> ou <datalist>
+
+-> optgroup
+cria um agrupamento de opções dentro do elemento
+
+-> datalist
+mostra uma lista de elementos predefinidos como opção para um caixa de entrada de texto
+
+-> Caixa de Mensagem (<textarea>)
+Para criar uma caixa de mensagem, deve-se criar um label e,
+criar uma <textarea> colocando o mesmo id, tanto no input quanto no textarea, para add letras transparentes dentro da caixa, usa-se placeholder.
+Exemplo:
+
+label for="imsg">Mensagem:</label><br>
+                <textarea name="msg" id="imsg" cols="30" rows="10" placeholder="Digite..."></textarea>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
